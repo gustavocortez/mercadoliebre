@@ -4,8 +4,17 @@
     padding: 0px;
 }
 
+/* 
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
 .logo-searchbar{
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +102,15 @@ main{
     top: -15px;
     }
 
-
+    .informacion{
+        position: relative;
+        display: flex;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;;
+    }
 
 .producto{
     margin-bottom: 10px;
@@ -106,17 +123,6 @@ main{
     width: 100%;
 }
 
-.informacion{
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    border-top: 1px solid #ebebee;
-    padding: 15px;
-    justify-content: space-evenly;
-}
-
-
-
 article { 
     font-size: 16px;
 }
@@ -124,15 +130,17 @@ article {
 width: 100%;
 }
 
-.producto #precio {
-    
+.informacion #precio {   
     font-size: 18px;
     width: 30%;
+    text-align: left;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.producto #descuento{
-    justify-content: space-between;
+.informacion #descuento{
     width: 70%;
     color:#39b54a;
 }
@@ -152,16 +160,19 @@ footer{
 }
 
 footer section{
+    padding-top: 10px;
     font-size: 12px;
+
 }
-h4 {
-    line-height: normal;
-}
+
+
 footer i{
     color: #1259c3;
+    size: 2em;
+    margin-bottom: 10px;
 }
 
-
+/* Navegación en tablets */
 @media (min-width:361px){
     .burger-menu{
         display: none;
@@ -195,9 +206,11 @@ footer i{
     }
 
 }
+
+/* Navegación en desktop */
 @media (min-width:769px){
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 20%;
+        width: 22%;
 }
 }
