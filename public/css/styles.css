@@ -57,6 +57,9 @@ body{
     background-color: #EAC926;
     font-family: Roboto;
     font-size: 12px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 .banner{
@@ -108,6 +111,11 @@ main{
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: 400ms;
+    }
+
+    .informacion > i:hover{
+        transform: rotate(-90deg);
     }
 
     .informacion{
@@ -190,6 +198,11 @@ main form .boton-enviar{
     border-radius: 3px;
     background-color: #1259c3;
     color: white;
+    transition: 200ms;
+}
+
+main form .boton-enviar:hover{
+    background-color: #0022AA;
 }
 
 fieldset{
@@ -218,6 +231,10 @@ footer i{
     margin-bottom: 10px;
 }
 
+footer i:hover{
+    color:#222222;
+}
+
 /* Navegación en tablets */
 @media (min-width:361px){
     .burger-menu{
@@ -230,10 +247,14 @@ footer i{
     }
     .producto #info{
         display: flex;
+        opacity: 0;
         position: absolute;
         bottom: 0px;
         left: 15px;
         }
+    .producto #info:hover{
+        opacity: 1;
+    }
     .main-navbar{
             display: flex;
             justify-content: space-between;
@@ -242,9 +263,13 @@ footer i{
         display: flex;
     }
     .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 0px 0px 0px rgb(100, 100, 100);
         width: 45%;
     }
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+
     .logo-searchbar{
         display: flex;
         flex-wrap: nowrap;
@@ -256,7 +281,15 @@ footer i{
 /* Navegación en desktop */
 @media (min-width:769px){
     .producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 22%;
 }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer section{
+        width: 28%;
+    }
 }
