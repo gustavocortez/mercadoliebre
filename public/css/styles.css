@@ -15,6 +15,7 @@ Verde: #39b54a;
 */
 
 .logo-searchbar{
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +27,14 @@ figure.logo{
 }
 
 .search-bar{
-    width: 30px;
+    width: 50%;
+}
+
+.search-bar input{
+    justify-content: center;
+    margin-left: 7px;
+    width: 80%;
+    height: 30px;
 }
 
 .main-navbar{
@@ -148,6 +156,44 @@ width: 100%;
 .producto #info {
     width: 100%;
     display: none;
+}
+
+main form{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+main input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+main form label{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+main .campo{
+    padding: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 25px;
+    border: 0;
+    border-radius: 3px;
+}
+
+main form .boton-enviar{
+    margin: 0 35%;
+    justify-content: center;
+    width: 30%;
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #1259c3;
+    color: white;
+}
+
+fieldset{
+    border: 0;
 }
 
 footer{

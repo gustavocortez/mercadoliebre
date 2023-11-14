@@ -46,26 +46,9 @@
     </header>
 
     <main>
-    <form action="/registro" method="POST"> Iniciar sesión
-        <input type="text" name="nombre" class="campo" placeholder="Nombre y Apellido" id="nombre"> <br>
-        <input type="text" name="username" class="campo" placeholder="Usuario" id="username"> <br>
-        <input type="email" name="email" class="campo" placeholder="Email" id="email"> <br>
-        <label for="fechaNacimiento">Fecha de Nacimiento</label> <br>
-        <input type="date" name="fechaNacimiento" class="campo" placeholder="Fecha de nacimiento" id="fechaNacimiento"> <br>
-        <input type="text" name="domicilio" class="campo" placeholder="Domicilio" id="domicilio"> <br>
-        <fieldset>
-            <label>Perfil de usuario</label> <br>
-            <input type="radio" name="perfil" value="comprador">Comprador 
-            <input type="radio" name="perfil" value="vendedor">Vendedor
-        </fieldset>
-        <fieldset>
-            <label>Intereses</label> <br>
-            <input type="checkbox" name="intereses" value="Electro">Electro <br>
-            <input type="checkbox" name="intereses" value="Moda">Moda <br>
-            <input type="checkbox" name="intereses" value="Hogar">Hogar <br>
-            <input type="checkbox" name="intereses" value="Juguetería">Juguetería <br>
-            <input type="checkbox" name="intereses" value="Vida sana">Vida sana <br>
-        </fieldset>
+    <form action="/login" method="POST"> Registro
+        <input type="text" name="username" class="campo" placeholder="Nombre de Usuario" id="username"> <br>
+        <input type="password" name="password" class="campo" placeholder="Contraseña" id="password"> <br>
         <a href="/"> 
             <input type="button" class="boton-enviar" value="Enviar">
         </a>
