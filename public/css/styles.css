@@ -119,13 +119,14 @@ main{
     }
 
     .informacion{
-        position: relative;
         display: flex;
+        position: relative;
+        width: 100%;
         border-top: 1px solid #ebebeb;
         padding: 15px;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 10px;;
+        margin-bottom: 10px;
     }
 
 .producto{
@@ -149,16 +150,17 @@ width: 100%;
 .informacion #precio {   
     font-size: 18px;
     width: 30%;
-    text-align: left;
     font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    padding-right: 5px; 
+    white-space: nowrap; 
+    text-align: left;
+    overflow: visible;  
 }
 
 .informacion #descuento{
     width: 70%;
     color:#39b54a;
+    padding-left: 5px;
 }
 
 .producto #info {
@@ -240,6 +242,10 @@ footer i:hover{
     .burger-menu{
         display: none;
     }
+    .informacion #precio{
+        width: 40%;
+    }
+
     .grilla{
         flex-direction: row;
         flex-wrap: wrap;
@@ -281,7 +287,7 @@ footer i:hover{
 /* Navegación en desktop */
 @media (min-width:769px){
     .producto{
-        width: 22%;
+        width: 24%;
 }
     footer{
         display: flex;
